@@ -3,7 +3,7 @@ const axios = require('axios');
 
 const app = express();
 const PORT = 8080;
-const BACKEND_URL = ProcessingInstruction.env.BACKEND_URL || 'http://backend:3001';
+const BACKEND_URL = process.env.BACKEND_URL || 'http://backend:3001';
 
 app.get('/', (req, res) => {
     res.send(`

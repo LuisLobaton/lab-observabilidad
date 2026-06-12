@@ -36,7 +36,7 @@ services:
       - "--path.rootfs=/host"
     pid: host
     volumes:
-      - /:/host:ro.rslave
+      - /:/host:ro,rslave
     ports:
       - "9100:9100"
     restart: unless-stopped 
