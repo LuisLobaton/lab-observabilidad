@@ -68,8 +68,7 @@ services:
     restart: unless-stopped
 
   alloy:
-    image: grafana/alloy:v1.10.0
-    platform: linux/amd64
+    image: grafana/alloy:latest
     container_name: lab-alloy
     command:
       - run
@@ -85,8 +84,7 @@ services:
     restart: unless-stopped
 
   grafana:
-    image: grafana/grafana:12.4.0
-    platform: linux/amd64
+    image: grafana/grafana:latest
     container_name: lab-grafana
     environment:
       - GF_SECURITY_ADMIN_USER=admin
